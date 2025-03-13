@@ -101,3 +101,29 @@ function createGame(){
 }
 
 createGame();
+
+const movingBarDiv = document.querySelector('.moving-bar > div');
+const movingBarP = document.querySelector('.moving-bar > div > p');
+const movingBar = document.querySelector('.moving-bar');
+
+function animateText() {
+    const textWidth = movingBarP.clientWidth;
+    const divWidth = movingBarDiv.clientWidth;
+    const barWidth = movingBar.clientWidth;
+    console.log(textWidth);
+    console.log(divWidth);
+
+    movingBarP.style.animationName = `sliding-animation`;
+    movingBarP.style.animationTimingFunction = 'linear';
+    movingBarP.style.animationIterationCount = 'infinite';
+
+    const style = document.createElement('style');
+    style.textContent = `@keyframes sliding-animation { from { transform: translateX(${divWidth}px); } to { transform: translateX(${-textWidth}px); } }`;
+    document.head.appendChild(style);
+}
+
+// Call the function to start the animation
+animateText();
+
+// this is added when use resize window, animation follows it
+window.onresize = animateText;

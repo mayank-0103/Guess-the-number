@@ -6,9 +6,25 @@ html {
     font-style: normal;
 }
 
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 90vw;
+    margin: auto;
 }
 
 .bucket {
@@ -17,10 +33,6 @@ html, body {
     border-radius: 10px;
     padding: 20px 40px;
     background-color: aliceblue;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
 }
 
 h1 {
@@ -31,7 +43,7 @@ h1 {
 .button {
     font-family: "Noto Sans", sans-serif;
     font-size: 1.2em;
-    background-color:rgb(255, 215, 141);
+    background-color: rgb(255, 215, 141);
     color: rgb(0, 0, 0);
     border-radius: 5px;
     border: 1.5px solid rgb(104, 11, 5);
@@ -52,7 +64,7 @@ h1 {
 
 #guessField:focus {
     outline: none;
-    background-color:rgb(255, 255, 235);
+    background-color: rgb(255, 255, 235);
 }
 
 .form input[type="number"] {
@@ -62,4 +74,33 @@ h1 {
 .lastResult {
     color: white;
     padding: 3px;
+}
+
+.moving-bar {
+    position: absolute;
+    background-color:rgb(255, 245, 231);
+    padding: 0px 5px;
+    margin: 0px 0px;
+    width: 100%;
+    bottom: 10px;
+    border-radius: 40px;
+    border: 1px solid rgb(116, 48, 5);
+    overflow: hidden;
+}
+
+.moving-bar>div {
+    position: relative;
+    margin: 5px 10px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.moving-bar>div>p {
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;  /* Prevents text from wrapping */
+    overflow: hidden;  /* Hides overflowing text */
 }
