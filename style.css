@@ -13,7 +13,7 @@ html {
 html,
 body {
     height: 100%;
-    margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -123,6 +123,15 @@ h1 {
     font-size: 2em;
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+
 .button {
     font-family: "Noto Sans", sans-serif;
     font-size: 1.2em;
@@ -187,4 +196,56 @@ h1 {
     margin: 0;
     white-space: nowrap;  /* Prevents text from wrapping */
     overflow: hidden;  /* Hides overflowing text */
+}
+
+@media (max-width: 650px) {
+    .headers {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98vw;
+        background-color:rgb(255, 245, 231);
+        padding: 5px 10px;
+        top: 10px;
+        border-radius: 0px;
+        border: 1px solid rgb(116, 48, 5);
+        overflow: hidden;
+    }
+
+    .headers>p {
+        margin: 5px 0px;
+        padding: 5px 4px;
+        font-size: 1.2em;
+    }
+
+    .about-game, .author-details {
+        width: 90%;
+    }
+
+    .bucket {
+        padding: 20px 20px;
+        background-color: aliceblue;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+
+    .bucket>p {
+        text-align: justify;
+    }
+
+    .form {
+        gap: 5px;
+    }
+
+    .form input[type="number"] {
+        width: 150px;
+    }
+
+    #guessField:focus {
+        background-color: white;
+    }
 }
