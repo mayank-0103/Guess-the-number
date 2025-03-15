@@ -1,47 +1,53 @@
 # Number Guessing Game
 
 ## Overview
-The Number Guessing Game is an interactive computational exercise in probabilistic reasoning, designed to engage users in iterative hypothesis testing within a predefined numerical range. The objective is to accurately determine a randomly generated integer within the inclusive bounds of 1 to 100, constrained by a maximum of 10 attempts. The system provides immediate feedback on the relative positioning of each guess in relation to the target value, thereby enabling the player to refine subsequent predictions. The game concludes either upon successful identification of the number or upon exhaustion of the allotted attempts, at which point a reset mechanism facilitates replayability.
+The **Number Guessing Game** is a simple yet engaging interactive program that challenges users to identify a randomly generated number between **1 and 100** within **10 attempts**. The game provides instant feedback to help users refine their guesses. The game ends when the number is correctly guessed or when all attempts are used up, with an option to restart and play again.
 
 ## Features
-- 🎲 Stochastic number generation within a bounded integer space (1–100).
-- 🔍 Real-time computational feedback for hypothesis refinement.
-- 📋 Historical tracking of prior inputs for strategic assessment.
-- 🔄 Automated game-state reset upon completion of a session.
-- 🎨 Intuitive user interface incorporating dynamic visual elements.
+- 🎲 **Random Number Generation** - A new number is generated for every session.
+- 🔍 **Feedback System** - Displays whether the guess is too high, too low, or correct.
+- 📋 **Previous Guesses** - Keeps track of past attempts for better decision-making.
+- 🔄 **Game Reset Functionality** - Allows users to start a new game without refreshing the page.
+- 🎨 **User-Friendly Interface** - A visually appealing and responsive design for an enjoyable experience.
+- 📱 **Mobile Compatibility** - Adjusts layout and usability across different screen sizes.
 
 ## Files Included
-- 📄 `index.html` - Core structural framework utilizing semantic HTML.
-- 🎨 `style.css` - Cascading Style Sheets for aesthetic and responsive enhancements.
-- 📜 `script.js` - JavaScript implementation governing game logic and event handling.
-- 📜 `LICENSE` - Legal documentation outlining usage rights and restrictions.
+- 📄 `index.html` - The main HTML file that structures the game’s layout.
+- 🎨 `style.css` - The stylesheet that controls the visual design.
+- 📜 `script.js` - JavaScript code that handles game logic and user interaction.
+- 📜 `LICENSE` - Information on permissions and usage rights.
+- 📄 `icons8-close.svg` - A close button icon used in modal elements.
 
 ## How to Play
-1. 🖥️ Open `index.html` in a modern web browser.
-2. 🔢 Input a numeric value within the permissible range (1–100).
-3. 🎯 Engage the "SUBMIT GUESS" mechanism to initiate evaluation.
-4. 📊 Receive immediate comparative analysis of the entered value.
-5. ⏳ Continue iterative guessing until either success or termination conditions are met.
-6. 🔄 Utilize the "Start new game" function to reset computational parameters for subsequent gameplay.
+1. 🖥️ Open `index.html` in a web browser.
+2. 🔢 Enter a guess (between 1 and 100) in the input field.
+3. 🎯 Click **SUBMIT GUESS** to check your input.
+4. 📊 The game will indicate if the guess is too high, too low, or correct.
+5. ⏳ Keep guessing until either:
+   - You find the correct number 🎉
+   - You reach the maximum of 10 attempts and see a **Game Over** message 😞
+6. 🔄 Click **Start New Game** to reset and play again.
 
 ## Technologies Used
-- 🌐 HTML - Structural markup defining the user interface components.
-- 🎨 CSS - Stylesheet-based visual presentation leveraging external font libraries.
-- ⚡ JavaScript - Core scripting language facilitating event-driven logic and interactivity.
+- 🌐 **HTML** - Defines the structure of the webpage.
+- 🎨 **CSS** - Styles the game interface and enhances user experience.
+- ⚡ **JavaScript** - Controls game logic, user interaction, and animations.
 
 ## Additional Enhancements
-- 🏃‍♂️ Dynamic text animations augmenting user engagement.
-- 🎭 Custom-stylized interactive elements enhancing usability.
-- 🔍 Optimized input focus management for improved user experience.
+- 🏃‍♂️ **Smooth Animations** - Enhances the look and feel of the game.
+- 🎭 **Interactive Elements** - Buttons and inputs respond dynamically to user actions.
+- 🔍 **Input Validation** - Ensures guesses are within the allowed range.
+- 📏 **Responsive Design** - Adapts to different screen sizes for an optimal experience.
 
 ## Future Enhancements
-- 🔊 Implementation of auditory feedback for success and failure states.
-- 🎚️ Integration of adjustable difficulty parameters (e.g., variable range constraints).
-- 🏆 Persistent tracking of historical performance metrics for leaderboard functionality.
-- 📱 UI optimizations for enhanced cross-platform accessibility.
+- 🔊 **Sound Effects** - Add feedback sounds for winning, losing, and incorrect guesses.
+- 🎚️ **Difficulty Levels** - Allow players to choose different number ranges.
+- 🏆 **Leaderboard System** - Track and display top scores and attempts.
+- 🌍 **Multiplayer Mode** - Compete with friends in a turn-based challenge.
 
 ## Author
 Developed by **Mayank Raj**.
+For more projects, visit [GitHub Profile](https://github.com/mayank-0103).
 
 ## License
-This project is subject to the terms and conditions specified in the `LICENSE` file.
+This project follows the terms specified in the `LICENSE` file.
